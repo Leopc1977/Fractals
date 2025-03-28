@@ -1,7 +1,5 @@
-// import the library
 import com.hamoid.*;
 
-// create a new VideoExport-object
 VideoExport videoExport;
 
 float x1 = -1;
@@ -17,14 +15,6 @@ float c_i = 0.00;
 float image_x = (x2 - x1) * zoom;
 float image_y = (y2 - y1) * zoom;
 
-float iteration_rouge =  1;
-float iteration_orange = 2;
-float iteration_jaune =  3;
-float iteration_vert =   4;
-float iteration_bleu =   5;
-float iteration_indigo = 6;
-float iteration_violet = 7;
-
 void setup() {
   size (1000, 1000);
 
@@ -38,7 +28,7 @@ void draw() {
 
   Julia();
   c_i+=0.0002;  
-  // Save a frame!
+
   videoExport.saveFrame();
 }
 
